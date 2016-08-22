@@ -105,6 +105,8 @@ shinyServer(function(input, output) {
         d <- dbGetQuery(USER$con,paste("SELECT * FROM",input$tabellen2,"WHERE",input$where,sep = " "))
       }
     }
+    is.char <- sapply(d, is.character)
+    d[is.char] <- lapply(d[is.char], factor)
     d
   })
   
