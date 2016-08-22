@@ -1,0 +1,9 @@
+.git
+.vscode
+.gitignore
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+packrat/lib*/
+sparktestje
